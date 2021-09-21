@@ -39,5 +39,43 @@ a {
   .navbar ul a:hover,
   .navbar ul a:focus,
   .navbar ul .active {
-    background-color: white;
+    background-color: rgb(117, 52, 52);
+  }
+
+.menu {
+    background-color: teal;
+    display: flex; /* let's align the items so everything is nice and centered */
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.menu a {
+    color: #e7e7e7;
+  }
+  
+  .menu ul {
+   /* Let's reset the margin and padding of the list so it's is flush. */
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Let's remove the bullet points */
+    display: flex; /* display the list flex and align the items centered */
+    align-items:center;
+  }
+  
+  
+  .menu ul li a {
+    color: #e7e7e7;
+    padding: 24px;
+    /*Let's make the anchor display block.
+       This will ensure when we hover, focus, or is active we get the full width and height 
+        of the container.
+    */
+    display: block;
+  }
+  
+  /* When a user hovers, focuses or if the link is active change the background */
+  .menu ul a:hover,
+  .menu ul a:focus,
+  .menu ul .active {
+    background-color: rgb(69, 101, 143);
   }
